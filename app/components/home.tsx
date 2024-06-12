@@ -15,7 +15,7 @@ import {
 } from "react-router-dom";
 import { ServiceWorkerMLCEngine } from "@neet-nestor/web-llm";
 
-import MlcIcon from "../icons/head.svg";
+import MlcIcon from "../icons/steel.svg";
 import LoadingIcon from "../icons/three-dots.svg";
 
 import Locale from "../locales";
