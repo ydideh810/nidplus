@@ -22,7 +22,7 @@ import {
 import CopyIcon from "../icons/copy.svg";
 import LoadingIcon from "../icons/three-dots.svg";
 import ShareIcon from "../icons/share.svg";
-import MlcIcon from "../icons/pro.png";
+import MlcIcon from "../icons/pro.svg";
 import MlcIconPng from "../icons/pro.png";
 
 import DownloadIcon from "../icons/download.svg";
