@@ -58,12 +58,17 @@ export interface ModelRecord {
   size?: string;
   quantization?: string;
   context_length?: string;
-  is_default?: boolean;
   family?: string;
   vram_required_MB?: number;
   buffer_size_required_bytes?: number;
   low_resource_required?: boolean;
   required_features?: string[];
+  recommended_config: {
+    temperature?: number;
+    top_p?: number;
+    presence_penalty?: number;
+    frequency_penalty?: number;
+  };
 }
 
 export abstract class LLMApi {

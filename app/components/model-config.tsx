@@ -1,16 +1,22 @@
-import { ModalConfigValidator, ModelConfig } from "../store";
+import {
+  ModalConfigValidator,
+  ModelConfig,
+  ModelType,
+  useAppConfig,
+} from "../store";
 
 import Locale from "../locales";
 import { InputRange } from "./input-range";
 import { ListItem, Select } from "./ui-lib";
-import { useAllModels } from "../utils/hooks";
 import React from "react";
 
 export function ModelConfigList(props: {
   modelConfig: ModelConfig;
+  selectModel: (model: ModelType) => void;
   updateConfig: (updater: (config: ModelConfig) => void) => void;
 }) {
-  const allModels = useAllModels();
+  const config = useAppConfig();
+  const models = config.models;
 
   return (
     <>
@@ -18,17 +24,12 @@ export function ModelConfigList(props: {
         <Select
           value={props.modelConfig.model}
           onChange={(e) => {
-            props.updateConfig(
-              (config) =>
-                (config.model = ModalConfigValidator.model(
-                  e.currentTarget.value,
-                )),
-            );
+            props.selectModel(e.target.value);
           }}
         >
-          {allModels.map((v, i) => (
+          {models.map((v, i) => (
             <React.Fragment key={i}>
-              {i > 0 && v.family !== allModels[i - 1].family && <hr />}
+              {i > 0 && v.family !== models[i - 1].family && <hr />}
               <option value={v.name}>
                 {v.name}
                 {v.provider ? ` (${v.provider})` : ""}

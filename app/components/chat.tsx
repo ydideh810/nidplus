@@ -91,7 +91,6 @@ import { ContextPrompts, TemplateAvatar, TemplateConfig } from "./template";
 import { ChatCommandPrefix, useChatCommand, useCommand } from "../command";
 import { prettyObject } from "../utils/format";
 import { ExportMessageModal } from "./exporter";
-import { useAllModels } from "../utils/hooks";
 import { MultimodalContent } from "../client/api";
 import { WebLLMContext } from "../client/webllm";
 import { Template, useTemplateStore } from "../store/template";
@@ -494,20 +493,7 @@ export function ChatActions(props: {
 
   // switch model
   const currentModel = config.modelConfig.model;
-  const allModels = useAllModels();
-  const models = useMemo(() => {
-    const defaultModel = allModels.find((m) => m.is_default);
-
-    if (defaultModel) {
-      const arr = [
-        defaultModel,
-        ...allModels.filter((m) => m !== defaultModel),
-      ];
-      return arr;
-    } else {
-      return allModels;
-    }
-  }, [allModels]);
+  const models = config.models;
   const [showModelSelector, setShowModelSelector] = useState(false);
   const [showUploadImage, setShowUploadImage] = useState(false);
 
@@ -569,7 +555,7 @@ export function ChatActions(props: {
           onClose={() => setShowModelSelector(false)}
           onSelection={(s) => {
             if (s.length === 0) return;
-            config.updateModelConfig({ model: s[0] as ModelType });
+            config.selectModel(s[0] as ModelType);
             showToast(s[0]);
           }}
         />
@@ -597,9 +583,6 @@ function _Chat() {
   const isStreaming = session.messages.some((m) => m.streaming);
 
   const [showExport, setShowExport] = useState(false);
-  const [engineStat, setEngineStats] = useState<ReactElement | undefined>(
-    undefined,
-  );
 
   const inputRef = useRef<HTMLTextAreaElement>(null);
   const [userInput, setUserInput] = useState("");
@@ -1348,9 +1331,11 @@ function _Chat() {
                         </div>
                       </>
                     )}
-                    {isContext
-                      ? Locale.Chat.IsContext
-                      : message.date.toLocaleString()}
+                    <div>
+                      {isContext
+                        ? Locale.Chat.IsContext
+                        : message.date.toLocaleString()}
+                    </div>
                   </div>
                 </div>
               </div>
