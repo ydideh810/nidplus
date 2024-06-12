@@ -3,8 +3,8 @@ import { SubmitKey } from "../store/config";
 // if you are adding a new translation, please use PartialLocaleType instead of LocaleType
 
 const en = {
-  Title: "WebLLM Chat",
-  Subtitle: "AI Models Running in Browser",
+  Title: "Niddam PRO",
+  Subtitle: "You're Private Chatbot!",
   WIP: "Coming Soon...",
   ChatItem: {
     ChatItemCount: (count: number) => `${count} messages`,
@@ -286,8 +286,8 @@ const en = {
   },
   Store: {
     DefaultTopic: "New Conversation",
-    BotHello: "Hello! How can I assist you today?",
-    Error: "Something went wrong, please try again later.",
+    BotHello: "Greetings! How can I assist you today?",
+    Error: "Unable to compute, please try again later.",
     Prompt: {
       History: (content: string) =>
         "This is a summary of the chat history as a recap: " + content,
@@ -395,7 +395,7 @@ const en = {
 
   ServiceWorker: {
     Error:
-      "The WebLLM worker has lost connection. Please close all tabs of WebLLM Chat and try opening WebLLM Chat again.",
+      "The Niddam engine has lost connection. Please close all tabs of Niddam and try opening it again.",
   },
 };
 
