@@ -6,9 +6,9 @@ import { getClientConfig } from "./config/client";
 import { type Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "WebLLM Chat",
+  title: "Niddam Pro",
   description:
-    "Chat with AI large language models running natively in your browser. Enjoy private, server-free, seamless AI conversations.",
+    "You're ultimate private assistant.",
   viewport: {
     width: "device-width",
     initialScale: 1,
@@ -16,10 +16,10 @@ export const metadata: Metadata = {
   },
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#fafafa" },
-    { media: "(prefers-color-scheme: dark)", color: "#151515" },
+    { media: "(prefers-color-scheme: dark)", color: "#9FA2B8" },
   ],
   appleWebApp: {
-    title: "WebLLM Chat",
+    title: "Niddam Pro",
     statusBarStyle: "default",
   },
 };
@@ -60,19 +60,19 @@ export default function RootLayout({
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/apple-touch-icon.png"
+          href="/nidbot.ico"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/favicon-32x32.png"
+          href="/nidbot.ico"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/favicon-16x16.png"
+          href="/nidbot.ico"
         />
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#062578" />
