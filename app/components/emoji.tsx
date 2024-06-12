@@ -6,7 +6,7 @@ import EmojiPicker, {
 
 import { ModelType } from "../store";
 
-import MlcIcon from "../icons/nidbot.png";
+import MlcIcon from "../icons/pro.svg";
 
 export function getEmojiUrl(unified: string, style: EmojiStyle) {
   // Whoever owns this Content Delivery Network (CDN), I am using your CDN to serve emojis
