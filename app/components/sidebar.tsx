@@ -25,7 +25,6 @@ import {
   MIN_SIDEBAR_WIDTH,
   NARROW_SIDEBAR_WIDTH,
   Path,
-  REPO_URL,
   WEBLLM_HOME_URL,
 } from "../constant";
 
