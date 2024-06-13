@@ -6,7 +6,7 @@ import { IconButton } from "./button";
 import SettingsIcon from "../icons/gear.svg";
 import GithubIcon from "../icons/github.svg";
 import InternetIcon from "../icons/internet.svg";
-import MlcIcon from "../icons/swol.svg";
+import MlcIcon from "../icons/final.svg";
 import AddIcon from "../icons/add.svg";
 import DeleteIcon from "../icons/delete.svg";
 import TemplateIcon from "../icons/chat.svg";
