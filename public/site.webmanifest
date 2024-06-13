@@ -3,12 +3,12 @@
   "short_name": "Niddam PRO",
   "icons": [
     {
-      "src": "/top.png",
+      "src": "/two.ico",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/top.png",
+      "src": "/two.ico",
       "sizes": "384x384",
       "type": "image/png"
     }
