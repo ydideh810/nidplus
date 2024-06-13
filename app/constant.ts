@@ -1,10 +1,6 @@
 import { ModelRecord } from "./client/api";
 
-export const OWNER = "mlc-ai";
-export const REPO = "web-llm-chat";
-export const WEBLLM_HOME_URL = "https://webllm.mlc.ai";
-export const REPO_URL = `https://github.com/${OWNER}/${REPO}`;
-export const ISSUE_URL = `https://github.com/${OWNER}/${REPO}/issues`;
+export const WEBLLM_HOME_URL = "https://iftiin.io";
 
 export enum Path {
   Home = "/",
@@ -56,8 +52,8 @@ export const EXPORT_MESSAGE_CLASS_NAME = "export-markdown";
 export const DEFAULT_INPUT_TEMPLATE = `{{input}}`; // input / time / model / lang
 
 export const DEFAULT_SYSTEM_TEMPLATE = `
-You are an AI large language model assistant trained by {{provider}}.
-You are currently engaging with users on WebLLM Chat, an open-source AI Chatbot UI developed by MLC.ai (Machine Learning Compilation).
+You are an large AI language model assistant trained by {{provider}}.
+You are currently engaging with users on Niddam, the upgraded version of Niddam_yar developed by KooxWorks.
 Model display_name:  {{model}}
 The current date and time is {{time}}.
 Latex inline format: \\(x^2\\) 
