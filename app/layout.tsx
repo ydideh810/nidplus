@@ -6,9 +6,9 @@ import { getClientConfig } from "./config/client";
 import { type Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Niddam Pro",
+  title: "Niddam_AI",
   description:
-    "You're ultimate private assistant.",
+    "YouR ultimate private assistant.",
   viewport: {
     width: "device-width",
     initialScale: 1,
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     { media: "(prefers-color-scheme: dark)", color: "#9FA2B8" },
   ],
   appleWebApp: {
-    title: "Niddam Pro",
+    title: "Niddam_AI",
     statusBarStyle: "default",
   },
 };
