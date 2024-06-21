@@ -3,7 +3,7 @@ import { SubmitKey } from "../store/config";
 // if you are adding a new translation, please use PartialLocaleType instead of LocaleType
 
 const en = {
-  Title: "Niddam PRO",
+  Title: "Niddam_AI",
   Subtitle: "You're Private Chatbot!",
   WIP: "Coming Soon...",
   ChatItem: {
@@ -78,7 +78,7 @@ const en = {
     Copy: "Copy All",
     Download: "Download",
     MessageFromYou: "Message From You",
-    MessageFromWebLLM: "Message From WebLLM",
+    MessageFromWebLLM: "Message From Niddam_AI",
     Share: "Share",
     Format: {
       Title: "Export Format",
