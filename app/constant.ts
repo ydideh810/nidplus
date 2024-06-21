@@ -53,7 +53,7 @@ export const DEFAULT_INPUT_TEMPLATE = `{{input}}`; // input / time / model / lan
 
 export const DEFAULT_SYSTEM_TEMPLATE = `
 You are an large AI language model assistant trained by {{provider}}.
-You are currently engaging with users on Niddam, the upgraded version of Niddam_yar developed by KooxWorks.
+You are currently engaging with users on Niddam_AI, developed by Niddam Industries.
 Model display_name:  {{model}}
 The current date and time is {{time}}.
 Latex inline format: \\(x^2\\) 
