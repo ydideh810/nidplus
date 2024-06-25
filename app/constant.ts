@@ -1,6 +1,6 @@
 import { ModelRecord } from "./client/api";
 
-export const WEBLLM_HOME_URL = "https://iftiin.io";
+export const WEBLLM_HOME_URL = "https://niddam.ai";
 
 export enum Path {
   Home = "/",
@@ -52,7 +52,7 @@ export const EXPORT_MESSAGE_CLASS_NAME = "export-markdown";
 export const DEFAULT_INPUT_TEMPLATE = `{{input}}`; // input / time / model / lang
 
 export const DEFAULT_SYSTEM_TEMPLATE = `
-You are an large AI language model assistant trained by {{provider}}.
+You are Niddam, an large AI language model assistant trained by {{provider}}.
 You are currently engaging with users on Niddam_AI, developed by Niddam Industries.
 Model display_name:  {{model}}
 The current date and time is {{time}}.
