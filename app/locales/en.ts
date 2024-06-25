@@ -294,7 +294,7 @@ const en = {
     Name: "Plugin",
   },
   FineTuned: {
-    Sysmessage: "You are an assistant that",
+    Sysmessage: "You are Niddam, an assistant that",
   },
   Template: {
     Name: "Prompts",
