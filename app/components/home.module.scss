@@ -42,7 +42,7 @@
   width: var(--sidebar-width);
   box-sizing: border-box;
   padding: 20px;
-  background-color: #afafaf;
+  background-color: #181616;
   display: flex;
   flex-direction: column;
   box-shadow: inset -2px 0px 2px 0px rgb(0, 0, 0, 0.05);
@@ -65,7 +65,7 @@
   &:hover,
   &:active {
     .sidebar-drag {
-      background-color: #B20000;
+      background-color: #181616;
 
       svg {
         opacity: 0.2;
