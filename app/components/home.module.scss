@@ -1,5 +1,5 @@
 @mixin container {
-  background-color: #9FA2B8;
+  background-color: #6A5F5F;
   border: var(--border-in-light);
   border-radius: 20px;
   box-shadow: var(--shadow);
@@ -42,7 +42,7 @@
   width: var(--sidebar-width);
   box-sizing: border-box;
   padding: 20px;
-  background-color: #6C2525;
+  background-color: #afafaf;
   display: flex;
   flex-direction: column;
   box-shadow: inset -2px 0px 2px 0px rgb(0, 0, 0, 0.05);
@@ -82,7 +82,7 @@
   right: 0;
   height: 100%;
   width: $width;
-  background-color: #B20000;
+  background-color: #181616;
   cursor: ew-resize;
   transition: all ease 0.3s;
   display: flex;
