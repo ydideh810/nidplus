@@ -164,7 +164,7 @@ input {
 input[type="checkbox"] {
   cursor: pointer;
   background-color: var(--white);
-  color: var(--black);
+  color: #dadada;
   appearance: none;
   border: var(--border-in-light);
   border-radius: 5px;
@@ -187,7 +187,7 @@ input[type="checkbox"]:checked::after {
 input[type="range"] {
   appearance: none;
   background-color: var(--white);
-  color: var(--black);
+  color: #dadada;
 }
 
 @mixin thumb() {
