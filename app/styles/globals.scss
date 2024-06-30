@@ -187,7 +187,7 @@ input[type="checkbox"]:checked::after {
 input[type="range"] {
   appearance: none;
   background-color: var(--white);
-  color: #dadada;
+  color: #ffff;
 }
 
 @mixin thumb() {
@@ -240,7 +240,7 @@ input[type="password"] {
   min-height: 36px;
   box-sizing: border-box;
   background: var(--white);
-  color: var(--black);
+  color: #ffff;
   padding: 0 10px;
   max-width: 50%;
   font-family: inherit;
