@@ -14,7 +14,7 @@
   --hover-color: #ffffff;
   --bar-color: rgb(177, 27, 27);
   --theme-color: rgb(250, 250, 250)
-  --mlc-icon-color: rgb(120, 6, 6);
+  --mlc-icon-color: #ffffff;
 
   /* shadow */
   --shadow: 50px 50px 100px 10px rgb(0, 0, 0, 0.1);
@@ -164,7 +164,7 @@ input {
 input[type="checkbox"] {
   cursor: pointer;
   background-color: var(--white);
-  color: #dadada;
+  color: #ffff;
   appearance: none;
   border: var(--border-in-light);
   border-radius: 5px;
