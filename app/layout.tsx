@@ -1,4 +1,6 @@
 /* eslint-disable @next/next/no-page-custom-font */
+"use client"; // Add this directive to mark this file as a Client Component
+
 import "./styles/globals.scss";
 import "./styles/markdown.scss";
 import "./styles/highlight.scss";
@@ -46,6 +48,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   const [showDialog, setShowDialog] = useState(true);
+
   return (
     <html lang="en">
       <head>
@@ -81,36 +84,36 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#2b5797" />
         <meta name="theme-color" content="#ffffff" />
       </head>
-       {showDialog && (
-        <dialog
-          className="fixed w-screen h-screen bg-black bg-opacity-50 inset-0 flex justify-center items-center z-50"
-        >
-          <article className="content-container bg-white p-8 overflow-y-scroll max-h-screen">
-            <h4 className="mb-4">Welcome to CosmoSpeak</h4>
+      <body>
+        {showDialog && (
+          <dialog
+            className="fixed w-screen h-screen bg-black bg-opacity-50 inset-0 flex justify-center items-center z-50"
+          >
+            <article className="content-container bg-white p-8 overflow-y-scroll max-h-screen">
+              <h4 className="mb-4">Welcome to CosmoSpeak</h4>
 
-            <p className="mb-8">
-              Explore the wonders of Space Engineering through A.I.
-            </p>
+              <p className="mb-8">
+                Explore the wonders of Space Engineering through A.I.
+              </p>
 
-            <ol className="list-decimal mx-6 pl-2 mb-8">
-              <li>Get started w/ a free trial!</li>  
-              
-            </ol>
-          
-            <button
-  className="p-3 px-6 bg-black text-red-700"
-  onClick={() => {
-    window.location.href = 'https://square.link/u/RmVSmy9L';
-    return false;
-  }}
->
-  Start Today
-</button>
+              <ol className="list-decimal mx-6 pl-2 mb-8">
+                <li>Get started w/ a free trial!</li>  
+              </ol>
 
-          </article>
-        </dialog>
-      )} 
-      <body>{children}</body>
+              <button
+                className="p-3 px-6 bg-black text-red-700"
+                onClick={() => {
+                  window.location.href = 'https://square.link/u/RmVSmy9L';
+                  return false;
+                }}
+              >
+                Start Today
+              </button>
+            </article>
+          </dialog>
+        )}
+        {children}
+      </body>
     </html>
   );
 }
