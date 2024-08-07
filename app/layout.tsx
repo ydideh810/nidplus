@@ -29,6 +29,7 @@ const cspHeader = `
 
 // Main component
 export default function RootLayout({
+const [showDialog, setShowDialog] = useState(true);
   children,
 }: {
   children: React.ReactNode;
