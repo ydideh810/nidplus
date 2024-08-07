@@ -86,14 +86,14 @@ export default function RootLayout({
         <meta name="theme-color" content="#ffffff" />
       </head>
                {showPopup && (
-    <div className="popup-overlay">
-      <div className="popup-content">
-        <h4 className="popup-title">Welcome to CosmoSpeak</h4>
-        <p className="popup-message">
+    <div className="fixed w-screen h-screen bg-black bg-opacity-50 inset-0 flex justify-center items-center z-50">
+      <div className="content-container bg-white p-8 overflow-y-scroll max-h-screen">
+        <h4 className="mb-4">Welcome to CosmoSpeak</h4>
+        <p className="mb-8">
           Explore the wonders of Space Engineering through A.I.
         </p>
         <button
-          className="popup-button"
+          className="p-3 px-6 bg-black text-red-700"
           onClick={() => {
             window.location.href = 'https://square.link/u/RmVSmy9L';
           }}
