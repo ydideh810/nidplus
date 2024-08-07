@@ -45,8 +45,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const [showDialog, setShowDialog] = useState(true);
-
   return (
     <html lang="en">
       <head>
