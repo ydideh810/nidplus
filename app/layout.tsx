@@ -85,7 +85,6 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#2b5797" />
         <meta name="theme-color" content="#ffffff" />
       </head>
-     <Metadata {...metadata} />
       <body>
         {showPopup && (
           <div className="popup-overlay">
