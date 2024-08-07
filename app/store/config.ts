@@ -1,4 +1,4 @@
-import { LogLevel } from "@neet-nestor/web-llm";
+import { LogLevel } from "@mlc-ai/web-llm";
 import { ModelRecord } from "../client/api";
 import {
   DEFAULT_INPUT_TEMPLATE,
@@ -179,14 +179,21 @@ export const useAppConfig = createPersistStore(
     },
 
     setModels(models: ModelRecord[]) {
-      set((state) => ({
-        ...state,
-        models,
-        modelConfig: {
-          ...state.modelConfig,
-          model: models[0].name,
-        },
-      }));
+      if (models.some((m) => m.name === get().modelConfig.model)) {
+        set((state) => ({
+          ...state,
+          models,
+        }));
+      } else {
+        set((state) => ({
+          ...state,
+          models,
+          modelConfig: {
+            ...state.modelConfig,
+            model: models[0].name,
+          },
+        }));
+      }
     },
 
     updateModelConfig(config: Partial<ModelConfig>) {
@@ -201,9 +208,9 @@ export const useAppConfig = createPersistStore(
   }),
   {
     name: StoreKey.Config,
-    version: 0.44,
+    version: 0.48,
     migrate: (persistedState, version) => {
-      if (version < 0.44) {
+      if (version < 0.48) {
         return {
           ...DEFAULT_CONFIG,
           ...(persistedState as any),

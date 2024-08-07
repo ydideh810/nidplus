@@ -6,14 +6,14 @@ import styles from "./home.module.scss";
 
 import log from "loglevel";
 import dynamic from "next/dynamic";
-import { useState, useEffect, useRef, useMemo, useCallback } from "react";
+import { useState, useEffect, useRef } from "react";
 import {
   HashRouter as Router,
   Routes,
   Route,
   useLocation,
 } from "react-router-dom";
-import { ServiceWorkerMLCEngine } from "@neet-nestor/web-llm";
+import { ServiceWorkerMLCEngine } from "@mlc-ai/web-llm";
 
 import MlcIcon from "../icons/smol.svg";
 import LoadingIcon from "../icons/three-dots.svg";
