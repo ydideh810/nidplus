@@ -6,7 +6,8 @@ import "./styles/markdown.scss";
 import "./styles/highlight.scss";
 import { getClientConfig } from "./config/client";
 import { useState, useEffect } from "react";
-
+import { metadata } from './metadata'
+import { Metadata } from 'next';
 // Metadata export
 
 
@@ -84,6 +85,7 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#2b5797" />
         <meta name="theme-color" content="#ffffff" />
       </head>
+     <Metadata {...metadata} />
       <body>
         {showPopup && (
           <div className="popup-overlay">
