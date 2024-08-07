@@ -5,7 +5,7 @@ import "./styles/globals.scss";
 import "./styles/markdown.scss";
 import "./styles/highlight.scss";
 import { getClientConfig } from "./config/client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { metadata } from './metadata'
 import { Metadata } from 'next';
 // Metadata export
