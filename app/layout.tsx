@@ -1,5 +1,3 @@
-/* eslint-disable @next/next/no-page-custom-font */
-"use client"; // Add this directive to mark this file as a Client Component
 
 import "./styles/globals.scss";
 import "./styles/markdown.scss";
