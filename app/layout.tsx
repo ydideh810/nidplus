@@ -29,13 +29,12 @@ const cspHeader = `
 
 // Main component
 export default function RootLayout({
-const [showDialog, setShowDialog] = useState(true);
+
   children,
 }: {
   children: React.ReactNode;
 }) {
   const [showPopup, setShowPopup] = useState(true);
-
   useEffect(() => {
     // Optionally, you can use localStorage to manage the popup visibility
     // Example: Check if the popup has been shown before
@@ -88,8 +87,8 @@ const [showDialog, setShowDialog] = useState(true);
       </head>
       <body>
          
-      {showDialog && (
-        <dialog
+      {showPopup && (
+        <popup
           className="fixed w-screen h-screen bg-black bg-opacity-50 inset-0 flex justify-center items-center z-50"
         >
           <article className="content-container bg-white p-8 overflow-y-scroll max-h-screen">
@@ -115,7 +114,7 @@ const [showDialog, setShowDialog] = useState(true);
 </button>
 
           </article>
-        </dialog>
+        </popup>
       )} 
       
         {children}
