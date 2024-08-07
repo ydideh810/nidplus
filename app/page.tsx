@@ -1,3 +1,5 @@
+use client;
+
 import { Home } from "./components/home";
 import { useState } from "react";
 
