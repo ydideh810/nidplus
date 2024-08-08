@@ -85,12 +85,7 @@ const [showDialog, setShowDialog] = useState(true);
             >
               Start Today
             </button>
-            <button
-              className="p-3 px-6 bg-gray-300"
-              onClick={handleClose}
-            >
-              Close
-            </button>
+          
           </article>
         </dialog>
       )}
