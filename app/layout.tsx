@@ -108,7 +108,7 @@ const [showPopup, setShowPopup] = useState(true);
               z-index: 1000;
             }
             .popup-content {
-              background: white;
+              background: black;
               padding: 20px;
               border-radius: 8px;
               text-align: center;
@@ -117,9 +117,11 @@ const [showPopup, setShowPopup] = useState(true);
             }
             .popup-content h2 {
               margin: 0 0 10px;
+              color: #4C0000;
             }
             .popup-content p {
               margin: 0 0 20px;
+              color: #4C0000;
             }
             .popup-content button {
               margin: 0 10px;
@@ -129,7 +131,7 @@ const [showPopup, setShowPopup] = useState(true);
               cursor: pointer;
             }
             .popup-content button:first-of-type {
-              background-color: #007bff;
+              background-color: color: #4C0000;
               color: white;
             }
             .popup-content button:last-of-type {
