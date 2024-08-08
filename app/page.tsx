@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import Home from './Home'; // Adjust the path as needed
+import Home from "./components/home"; // Adjust the path as needed
 
 export default function App() {
   const [showDialog, setShowDialog] = useState(true);
