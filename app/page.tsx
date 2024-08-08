@@ -17,13 +17,13 @@ export default async function App() {
         onClick={() => {
           window.location.href = 'https://square.link/u/RmVSmy9L';
           return false;
-        }}
+        }};
       >
         Start Today
       </button>
     </article>
   </dialog>
-)}
+)};
       
     <Home />
 );
