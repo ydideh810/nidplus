@@ -83,7 +83,7 @@ const [showPopup, setShowPopup] = useState(true);
         <meta name="theme-color" content="#ffffff" />
       </head>
          {showPopup && (
-        <div className="popup-overlay">
+        <div className="popup-overlay bg-dark">
           <div className="popup-content">
             <h2 className="mb-4 text-3xl text-center p-10 text-red-700">Welcome to Niddam.Pro</h2>
             <p className="mb-8 text-3xl text-center p-10 text-red-700">The Ultimate Private AI Experience Awaits!</p>
