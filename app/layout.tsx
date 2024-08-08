@@ -5,7 +5,7 @@ import "./styles/globals.scss";
 import "./styles/markdown.scss";
 import "./styles/highlight.scss";
 import { getClientConfig } from "./config/client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 // Content Security Policy header
@@ -32,8 +32,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-const [showDialog, setShowDialog] = useState(true);
+const [showPopup, setShowPopup] = useState(false);
 
+ useEffect(() => {
+    setShowPopup(true);
+  }, []);
+    
   return (
     <html lang="en">
       <head>
@@ -69,28 +73,64 @@ const [showDialog, setShowDialog] = useState(true);
         <meta name="msapplication-TileColor" content="#2b5797" />
         <meta name="theme-color" content="#ffffff" />
       </head>
+         {showPopup && (
+        <div className="popup-overlay">
+          <div className="popup-content">
+            <h2>Welcome to Our Site!</h2>
+            <p>Explore our latest features and updates.</p>
+            <button onClick={() => window.location.href = 'https://example.com'}>
+              Learn More
+            </button>
+           
+          </div>
+          <style jsx>{`
+            .popup-overlay {
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: rgba(0, 0, 0, 0.5);
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              z-index: 1000;
+            }
+            .popup-content {
+              background: white;
+              padding: 20px;
+              border-radius: 8px;
+              text-align: center;
+              max-width: 500px;
+              width: 100%;
+            }
+            .popup-content h2 {
+              margin: 0 0 10px;
+            }
+            .popup-content p {
+              margin: 0 0 20px;
+            }
+            .popup-content button {
+              margin: 0 10px;
+              padding: 10px 20px;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+            }
+            .popup-content button:first-of-type {
+              background-color: #007bff;
+              color: white;
+            }
+            .popup-content button:last-of-type {
+              background-color: #6c757d;
+              color: white;
+            }
+          `}</style>
+        </div>
+      )}
         
       <body>
-       {showDialog && (
-        <dialog className="fixed w-screen h-screen bg-black bg-opacity-50 inset-0 flex justify-center items-center z-50">
-          <article className="content-container bg-white p-8 overflow-y-scroll max-h-screen">
-            <h4 className="mb-4">Welcome to CosmoSpeak</h4>
-            <p className="mb-8">Explore the wonders of Space Engineering through A.I.</p>
-            <ol className="list-decimal mx-6 pl-2 mb-8">
-              <li>Get started w/ a free trial!</li>
-            </ol>
-            <button
-              className="p-3 px-6 bg-black text-red-700"
-              onClick={() => {
-                window.location.href = 'https://square.link/u/RmVSmy9L';
-              }}
-            >
-              Start Today
-            </button>
-          
-          </article>
-        </dialog>
-      )}
+      
         {children}
       </body>
     </html>
