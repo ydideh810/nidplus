@@ -76,10 +76,10 @@ const [showPopup, setShowPopup] = useState(false);
          {showPopup && (
         <div className="popup-overlay">
           <div className="popup-content">
-            <h2>Welcome to Our Site!</h2>
-            <p>Explore our latest features and updates.</p>
-            <button onClick={() => window.location.href = 'https://example.com'}>
-              Learn More
+            <h2 className="mb-4">Welcome to Niddam.Pro</h2>
+            <p className="mb-8">The Ultimate Private AI Experience Awaits!</p>
+            <button onClick={() => window.location.href = 'https://square.link/u/8kZxvCEH'}>
+              Start Free
             </button>
            
           </div>
