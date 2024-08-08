@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from 'react';
 import Home from './Home'; // Adjust the path as needed
 
