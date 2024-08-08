@@ -32,11 +32,20 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-const [showPopup, setShowPopup] = useState(false);
+const [showPopup, setShowPopup] = useState(true);
 
  useEffect(() => {
-    setShowPopup(true);
+    const intervalId = setInterval(() => {
+      setShowPopup(true);
+    }, 10000); // Show popup every 10 seconds
+
+    return () => clearInterval(intervalId); // Cleanup interval on unmount
   }, []);
+
+      const handleClose = () => {
+    setShowPopup(false);
+
+  };
     
   return (
     <html lang="en">
@@ -81,7 +90,9 @@ const [showPopup, setShowPopup] = useState(false);
             <button onClick={() => window.location.href = 'https://square.link/u/8kZxvCEH'}>
               Start Free
             </button>
-           
+            <button onClick={handleClose}>
+              Close
+            </button>
           </div>
           <style jsx>{`
             .popup-overlay {
