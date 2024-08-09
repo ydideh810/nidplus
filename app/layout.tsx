@@ -37,7 +37,7 @@ const [showPopup, setShowPopup] = useState(true);
  useEffect(() => {
     const intervalId = setInterval(() => {
       setShowPopup(true);
-    }, 10000); // Show popup every 10 seconds
+    }, 3600000); // Show popup every hour
 
     return () => clearInterval(intervalId); // Cleanup interval on unmount
   }, []);
