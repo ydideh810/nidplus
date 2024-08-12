@@ -525,7 +525,6 @@ export const DEFAULT_MODELS: ModelRecord[] = [
     provider: "Alibaba",
     size: "0.5B",
     quantization: "q0f16",
-
     family: "Qwen 2",
     vram_required_MB: 1624.12,
     low_resource_required: true,
@@ -542,7 +541,6 @@ export const DEFAULT_MODELS: ModelRecord[] = [
     provider: "Alibaba",
     size: "0.5B",
     quantization: "q0f32",
-
     family: "Qwen 2",
     vram_required_MB: 2654.75,
     low_resource_required: true,
@@ -559,7 +557,6 @@ export const DEFAULT_MODELS: ModelRecord[] = [
     provider: "Alibaba",
     size: "1.5B",
     quantization: "q4f16_1",
-
     family: "Qwen 2",
     vram_required_MB: 1629.75,
     low_resource_required: true,
@@ -576,7 +573,6 @@ export const DEFAULT_MODELS: ModelRecord[] = [
     provider: "Alibaba",
     size: "1.5B",
     quantization: "q4f32",
-
     family: "Qwen 2",
     vram_required_MB: 1888.97,
     low_resource_required: true,
@@ -593,7 +589,6 @@ export const DEFAULT_MODELS: ModelRecord[] = [
     provider: "Alibaba",
     size: "7B",
     quantization: "q4f16_1",
-
     family: "Qwen 2",
     vram_required_MB: 5106.67,
     low_resource_required: false,
@@ -610,8 +605,72 @@ export const DEFAULT_MODELS: ModelRecord[] = [
     provider: "Alibaba",
     size: "7B",
     quantization: "q4f32",
-
     family: "Qwen 2",
+    vram_required_MB: 5900.09,
+    low_resource_required: false,
+    recommended_config: {
+      temperature: 0.7,
+      presence_penalty: 0,
+      frequency_penalty: 0,
+      top_p: 0.8,
+    },
+  },
+  // Qwen2-Math
+  {
+    name: "Qwen2-Math-1.5B-Instruct-q4f16_1-MLC",
+    display_name: "Qwen",
+    provider: "Alibaba",
+    size: "1.5B",
+    quantization: "q4f16_1",
+    family: "Qwen 2 Math",
+    vram_required_MB: 1629.75,
+    low_resource_required: true,
+    recommended_config: {
+      temperature: 1.0,
+      presence_penalty: 0,
+      frequency_penalty: 0,
+      top_p: 0.8,
+    },
+  },
+  {
+    name: "Qwen2-Math-1.5B-Instruct-q4f32_1-MLC",
+    display_name: "Qwen",
+    provider: "Alibaba",
+    size: "1.5B",
+    quantization: "q4f32_1",
+    family: "Qwen 2 Math",
+    vram_required_MB: 1888.97,
+    low_resource_required: true,
+    recommended_config: {
+      temperature: 1.0,
+      presence_penalty: 0,
+      frequency_penalty: 0,
+      top_p: 0.8,
+    },
+  },
+  {
+    name: "Qwen2-Math-7B-Instruct-q4f16_1-MLC",
+    display_name: "Qwen",
+    provider: "Alibaba",
+    size: "7B",
+    quantization: "q4f16_1",
+    family: "Qwen 2 Math",
+    vram_required_MB: 5106.67,
+    low_resource_required: false,
+    recommended_config: {
+      temperature: 0.7,
+      presence_penalty: 0,
+      frequency_penalty: 0,
+      top_p: 0.8,
+    },
+  },
+  {
+    name: "Qwen2-Math-7B-Instruct-q4f32_1-MLC",
+    display_name: "Qwen",
+    provider: "Alibaba",
+    size: "7B",
+    quantization: "q4f32_1",
+    family: "Qwen 2 Math",
     vram_required_MB: 5900.09,
     low_resource_required: false,
     recommended_config: {
