@@ -87,7 +87,7 @@ const [showPopup, setShowPopup] = useState(true);
           <div className="popup-content">
             <h2 className="mb-4 text-3xl text-center p-10 text-red-700">Welcome to Niddam.Pro</h2>
             <p className="mb-8 text-3xl text-center p-10 text-red-700">The Ultimate Private AI Experience Awaits!</p>
-            <button onClick={() => window.location.href = 'https://square.link/u/8kZxvCEH'}>
+            <button onClick={() => window.location.href = 'https://square.link/u/7ylSy5Cp'}>
               Start Free
             </button>
             <button onClick={handleClose}>
