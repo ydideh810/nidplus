@@ -85,9 +85,9 @@ const [showPopup, setShowPopup] = useState(true);
          {showPopup && (
         <div className="popup-overlay bg-dark">
           <div className="popup-content">
-            <h2 className="mb-4 text-3xl text-center p-10 text-red-700">Welcome to Niddam.Pro</h2>
+            <h2 className="mb-4 text-3xl text-center p-10 text-red-700">Welcome to Niddam_AI</h2>
             <p className="mb-8 text-3xl text-center p-10 text-red-700">The Ultimate Private AI Experience Awaits!</p>
-            <button onClick={() => window.location.href = 'https://square.link/u/7ylSy5Cp'}>
+            <button onClick={() => window.location.href = 'https://square.link/u/xMwlsodE'}>
               Life Access
             </button>
             <button onClick={handleClose}>
