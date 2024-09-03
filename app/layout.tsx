@@ -90,6 +90,9 @@ const [showPopup, setShowPopup] = useState(true);
             <button onClick={() => window.location.href = 'https://square.link/u/xMwlsodE'}>
               Life Access
             </button>
+               <button onClick={() => window.location.href = 'https://square.link/u/8kZxvCEH'}>
+              Subscribe
+            </button>
             <button onClick={handleClose}>
               Not Now
             </button>
