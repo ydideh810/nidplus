@@ -573,11 +573,11 @@ export const DEFAULT_MODELS: ModelRecord[] = [
     },
   },
   {
-    name: "Qwen2.5-72B-Instruct-q0f16-MLC",
+    name: "Qwen2.5-Coder-1.5B-Instruct-q4f16_1-MLC",
     display_name: "Qwen",
     provider: "Alibaba",
-    size: "72B",
-    quantization: "q0f16",
+    size: "1.5B",
+    quantization: "q4f16_1",
     family: "Qwen 2.5",
     recommended_config: {
       temperature: 0.7,
