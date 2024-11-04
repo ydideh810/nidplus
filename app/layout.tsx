@@ -82,69 +82,7 @@ const [showPopup, setShowPopup] = useState(true);
         <meta name="msapplication-TileColor" content="#2b5797" />
         <meta name="theme-color" content="#ffffff" />
       </head>
-         {showPopup && (
-        <div className="popup-overlay bg-dark">
-          <div className="popup-content">
-            <h2 className="mb-4 text-3xl text-center p-10 text-red-700">Welcome to Niddam_AI</h2>
-            <p className="mb-8 text-3xl text-center p-10 text-red-700">The Ultimate Private AI Experience Awaits!</p>
-            <button onClick={() => window.location.href = 'https://square.link/u/xMwlsodE'}>
-              Life Access
-            </button>
-               <button onClick={() => window.location.href = 'https://square.link/u/8kZxvCEH'}>
-              Subscribe
-            </button>
-            <button onClick={handleClose}>
-              Not Now
-            </button>
-          </div>
-          <style jsx>{`
-            .popup-overlay {
-              position: fixed;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              rgba(0, 0, 0, 0.5);
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              z-index: 1000;
-            }
-            .popup-content {
-              background: black;
-              padding: 20px;
-              border-radius: 8px;
-              box-shadow: rgba(132, 0, 0, 0.8) 0px 30px 60px -12px inset, rgba(255, 127, 127, 0.8) 0px 18px 36px -18px inset;
-              text-align: center;
-              max-width: 500px;
-              width: 100%;
-            }
-            .popup-content h2 {
-              margin: 0 0 10px;
-              color: #4C0000;
-            }
-            .popup-content p {
-              margin: 0 0 20px;
-              color: #4C0000;
-            }
-            .popup-content button {
-              margin: 0 10px;
-              padding: 10px 20px;
-              border: none;
-              border-radius: 4px;
-              cursor: pointer;
-            }
-            .popup-content button:first-of-type {
-              background-color: color: #4C0000;
-              color: white;
-            }
-            .popup-content button:last-of-type {
-              background-color: #6c757d;
-              color: white;
-            }
-          `}</style>
-        </div>
-      )}
+        
         
       <body>
       
