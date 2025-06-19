@@ -6,7 +6,7 @@ import { getClientConfig } from "./config/client";
 import { type Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "WebLLM Chat",
+  title: "NeuroNemesis",
   description:
     "Chat with AI large language models running natively in your browser. Enjoy private, server-free, seamless AI conversations.",
   viewport: {
@@ -15,11 +15,11 @@ export const metadata: Metadata = {
     maximumScale: 1,
   },
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#fafafa" },
-    { media: "(prefers-color-scheme: dark)", color: "#151515" },
+    { media: "(prefers-color-scheme: light)", color: "#FFCDCD" },
+    { media: "(prefers-color-scheme: dark)", color: "#B20000" },
   ],
   appleWebApp: {
-    title: "WebLLM Chat",
+    title: "NeuroNemesis",
     statusBarStyle: "default",
   },
 };
