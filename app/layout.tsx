@@ -66,13 +66,13 @@ export default function RootLayout({
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/nn.png"
+          href="/N.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/nn.png"
+          href="/N.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#062578" />
