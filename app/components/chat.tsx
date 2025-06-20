@@ -31,7 +31,7 @@ import BrainIcon from "../icons/brain.svg";
 
 import BottomIcon from "../icons/bottom.svg";
 import StopIcon from "../icons/pause.svg";
-import RobotIcon from "../icons/robot.svg";
+import RobotIcon from "../icons/sml.svg";
 
 import {
   ChatMessage,
